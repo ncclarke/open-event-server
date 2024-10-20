@@ -8,8 +8,7 @@
 * OpenSSL
 
 ### A quick note for Windows users
-You may notice that you are unable to clone the project without a warning. Some files within the migrations/versions directory contain illegal file names for a windows system. The Open Event Server is not optimized for running localy on a Windows machine.Therefore it is suggested that you use Windows Subsystem for Linux(WSL), or a virtual machine to run the project locally. The setup steps for WSL can be found here: https://learn.microsoft.com/en-us/windows/wsl/install. Once using oen of these options you should be able to complete the following steps as usual.
-
+You may notice that you are unable to clone the project without a warning. Some files within the migrations/versions directory contain illegal file names for a Windows system. The Open Event Server is not optimized for running locally on a Windows machine. Therefore, it is suggested that you use Windows Subsystem for Linux (WSL) or a virtual machine to run the project locally. The setup steps for WSL can be found here: https://learn.microsoft.com/en-us/windows/wsl/install. Once using one of these options, you should be able to complete the following steps as usual.
 ### For mac users
 ```sh
 brew install postgresql
