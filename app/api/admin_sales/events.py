@@ -12,7 +12,8 @@ from app.models.event import Event
 
 class AdminSalesByEventsSchema(Schema):
     """
-    Sales summarized by event
+    Sales summarized by event. Mainly includes information on the event
+    itself, but also includes some info on the sales and tickets of the event.
 
     Provides
         event(name),
