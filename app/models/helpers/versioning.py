@@ -3,15 +3,21 @@ import re
 import bleach
 from bleach.callbacks import nofollow, target_blank
 
+"""
+Class to modify strings
+"""
 
+# Removes \r
 def remove_line_breaks(target_string: str) -> str:
     return target_string.replace('\r', '')
 
 
+# Removes \n
 def strip_line_breaks(target_string: str) -> str:
     return target_string.replace('\n', '').replace('\r', '')
 
 
+# Removes whitespace and \r, then removes \n if it contains a-z or A-Z
 def clean_up_string(target_string):
     if target_string:
         if not re.search('[a-zA-Z]', target_string):
@@ -20,6 +26,7 @@ def clean_up_string(target_string):
     return target_string
 
 
+# Makes html safe
 def clean_html(html, allow_link=False):
     if html is None:
         return None
@@ -53,6 +60,7 @@ def clean_html(html, allow_link=False):
     )
 
 
+# Removes html from text
 def strip_tags(html):
     if html is None:
         return None
